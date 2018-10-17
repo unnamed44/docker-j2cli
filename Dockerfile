@@ -1,7 +1,7 @@
 FROM alpine
 
 RUN apk update \
- && add --no-cache py2-pip \
+ && apk add --no-cache py2-pip \
  && pip install --upgrade pip \
  && pip install j2cli
 
